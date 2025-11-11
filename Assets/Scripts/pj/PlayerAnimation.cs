@@ -31,9 +31,9 @@ public class PlayerAnimation : MonoBehaviour
         // El Animator automáticamente manejará la transición entre:
         // - "isMoving" = false -> Animación IDLE
         // - "isMoving" = true -> Animación RUN
-        if(Input.GetKeyDown(KeyCode.Space))
+        /*if(Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("Die");
-        }
+        }*/
     }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
     [SerializeField] private int health = 30;
 
     public void TakeDamage(int damage)
