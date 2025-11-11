@@ -28,7 +28,6 @@ public class PlayerMovement : MonoBehaviour
         Vector2 input = playerInput.GetMovementInput();
         Move(input);
         Flip(input.x);
-
     }
     /*
      * Metodo para mover al personaje 
@@ -38,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 movement = input.normalized;
         rb.linearVelocity = movement * speed;
+        // Preguntar si se esta moviendo para devolver true
         IsMoving = movement.magnitude > 0.1f;
     }
     /*
